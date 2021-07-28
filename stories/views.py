@@ -1,3 +1,4 @@
+from stories.permissions import IsAuthorOrReadOnly
 from django.db import models
 from django.shortcuts import render
 from rest_framework import generics
@@ -13,3 +14,4 @@ class StoriesListView(generics.ListCreateAPIView):
 class StoryDetailsView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = StoriesSerializer
     queryset = Story.objects.all()
+    permission_classes = (IsAuthorOrReadOnly,)

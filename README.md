@@ -1,0 +1,1 @@
+[https://github.com/AhmedZatar/drf-api-permissions-postgres/pull/1](https://github.com/AhmedZatar/drf-api-permissions-postgres/pull/1)
